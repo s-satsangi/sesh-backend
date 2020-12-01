@@ -40,3 +40,6 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'faker'
+# adding carrierwave support as detailed at:
+# https://nayan.co/blog/Ruby-on-Rails/how-to-upload-files-using-carrierwave-google-storage/
+gem 'carrierwave-google-storage'
