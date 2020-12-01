@@ -7,9 +7,16 @@ Song.destroy_all
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-20.times do
-    Track.create(link: Faker::Internet.url)
-end
+# 20.times do
+#     Track.create(link: Faker::Internet.url)
+# end
+###The links to files in our sesh bucket are:
+### https://storage.googleapis.com/ducks-and-crackers/(filename)
+Track.create(link: "https://storage.googleapis.com/ducks-and-crackers/bassguitar.mp3")
+Track.create(link: "https://storage.googleapis.com/ducks-and-crackers/clav.mp3")
+Track.create(link: "https://storage.googleapis.com/ducks-and-crackers/drums.mp3")
+Track.create(link: "https://storage.googleapis.com/ducks-and-crackers/horns.mp3")
+Track.create(link: "https://storage.googleapis.com/ducks-and-crackers/leadguitar.mp3")
 
 20.times do
     Song.create(title: Faker::Music::Prince.song, metadata: Faker::String.random)
