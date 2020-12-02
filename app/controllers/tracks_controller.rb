@@ -4,6 +4,9 @@ class TracksController < ApplicationController
         render json: tracks, include: [:link]
     end
     def create
-        console.log("That tickles.")
+        # byebug
+        # puts(params)
+        # User.create(avatar: params[:image_file])
+        Track.create(bucket_link: params[:_json])
     end
 end
