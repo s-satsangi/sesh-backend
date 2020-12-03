@@ -43,3 +43,5 @@ gem 'faker'
 # adding carrierwave support as detailed at:
 # https://nayan.co/blog/Ruby-on-Rails/how-to-upload-files-using-carrierwave-google-storage/
 gem 'carrierwave-google-storage'
+# gem 'fog-google'
+gem 'gcloud'

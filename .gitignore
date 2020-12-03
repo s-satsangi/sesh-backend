@@ -30,3 +30,6 @@
 
 # Ignore master key for decrypting credentials and more.
 /config/master.key
+/config/initializers/sesh-63aa6d2c3964.json
+/config/initializers/sesh-297301-646c2a16a5e6.json
+/app/controllers/sesh-297301-646c2a16a5e6.json
