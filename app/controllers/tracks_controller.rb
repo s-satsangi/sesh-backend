@@ -2,7 +2,9 @@ require "google/cloud/storage"
 class TracksController < ApplicationController
     def index
         tracks = Track.all
-        render json: tracks, include: [:link]
+        # byebug
+        render json: tracks
+        # hm.  so carrierwave and active record store stuff non-serializable by defailt >> , include: [:link]
     end
 
     def create
