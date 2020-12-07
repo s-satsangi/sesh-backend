@@ -8,7 +8,8 @@ class TracksController < ApplicationController
     end
 
     def create
-        gcloud = Gcloud.new("sesh-297301","/mnt/c/Users/ssats/Documents/GitHub/Phase3/project/Sesh/sesh-297301-646c2a16a5e6.json")
+        # gcloud = Gcloud.new("sesh-297301","/mnt/c/Users/ssats/Documents/GitHub/Phase3/project/Sesh/sesh-297301-646c2a16a5e6.json")
+        gcloud = Gcloud.new("sesh-297301")
         storage = gcloud.storage
         # byebug
         bucket = storage.bucket 'ducks-and-crackers'
@@ -19,6 +20,7 @@ class TracksController < ApplicationController
         # byebug
 
         Track.create(link: file_name, bucket_link: file_url)
+        render json: Track.last
     end
     # to get the file,
     # track = Track.find_by(whatever) 
