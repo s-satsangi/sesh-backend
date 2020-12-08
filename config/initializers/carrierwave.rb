@@ -11,7 +11,7 @@ CarrierWave.configure do |config|
   
   config.gcloud_credentials = {
     gcloud_project: 'sesh-297310',                              # Better fetch this from environment variables
-    # gcloud_keyfile: '/mnt/c/Users/ssats/Documents/GitHub/Phase3/project/Sesh/sesh-297301-646c2a16a5e6.json'                       # Better fetch this from environment variables
+    # Better fetch this from environment variables
   }
 end
 # ^^^^ the above 16 lines are adapted from

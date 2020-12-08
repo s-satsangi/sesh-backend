@@ -9,7 +9,7 @@ class TracksController < ApplicationController
 
     def create
         # byebug
-        # gcloud = Gcloud.new("sesh-297301","/mnt/c/Users/ssats/Documents/GitHub/Phase3/project/Sesh/sesh-297301-646c2a16a5e6.json")
+       
         gcloud = Gcloud.new("sesh-297301")
         storage = gcloud.storage
         # byebug
